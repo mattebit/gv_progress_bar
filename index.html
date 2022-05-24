@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="dist/loading-bar.css"/>
+        <link rel="stylesheet" type="text/css" href="c.css"/>
+    </head>
+    <body>
+        <script type="text/javascript" src="dist/loading-bar.js"></script>
+
+        <div class="vertical-center">
+            <div class="center">
+                <img src="logo.png" 
+                style="width:40%;"
+                class="center">
+            
+                <div class="ldBar", id="myItem1"
+                style="width:100%;height:200px;margin-top:20px;",
+                data-stroke="data:ldbar/res,gradient(0,1,#5fa,#ec9,#fd9)",
+                data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20"
+                ></div>
+            </div>
+        </div>
+
+        <script>
+            //document.getElementById('bar').ldBar.set(60);
+            //var a = document.getElementById('bar');
+            
+            var bar1 = new ldBar("#myItem1");
+            bar1.set(50);
+        </script>
+    </body>
+</html>
